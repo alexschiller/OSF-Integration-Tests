@@ -18,6 +18,8 @@ driver= webdriver.Remote(
 command_executor='http://shikhadubey1:Mhtt1XkQq18k8nqQzsqn@hub.browserstack.com:80/wd/hub',
 desired_capabilities= desired_cap)
 
+test_login(driver)
+
 class idontknow:
     def test_login(driver):
         
