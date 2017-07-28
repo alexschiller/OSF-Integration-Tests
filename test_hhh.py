@@ -38,4 +38,4 @@ class idontknow:
         driver.quit()
 
         
-idontknow.test_login(driver)
+idontknow(driver)
