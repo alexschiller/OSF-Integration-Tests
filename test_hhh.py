@@ -20,7 +20,7 @@ desired_capabilities= desired_cap)
 
 
 class idontknow:
-    def test_login(self,driver):
+    def __init__(self, driver):
         
         driver.get("https://staging.osf.io/")
         time.sleep(3)
@@ -38,4 +38,4 @@ class idontknow:
         driver.quit()
 
         
-idontknow.test_login(idontknow,driver)
+idontknow.test_login(driver)
