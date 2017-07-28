@@ -32,4 +32,4 @@ class idontknow:
         driver.quit()
 
 i= idontknow     
-i.test_login(driver)
+i.test_login(i,driver)
