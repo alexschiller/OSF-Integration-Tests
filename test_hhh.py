@@ -6,18 +6,21 @@ import time
 from selenium import webdriver
 
 
-@pytest.yield_fixture
+'''@pytest.yield_fixture
 def driver():
     desired_cap= {'browser': 'Chrome', 'browser_version': '59.0', 'os': 'Windows', 'os_version': '10', 'resolution': '1024x768'}
     driver= webdriver.Remote(
     command_executor='http://shikhadubey1:Mhtt1XkQq18k8nqQzsqn@hub.browserstack.com:80/wd/hub',
     desired_capabilities= desired_cap)
     yield driver
-    driver.quit()
+    driver.quit()'''
 
 class idontknow:
     def test_login(self, driver):
-        
+        desired_cap= {'browser': 'Chrome', 'browser_version': '59.0', 'os': 'Windows', 'os_version': '10', 'resolution': '1024x768'}
+        driver= webdriver.Remote(
+        command_executor='http://shikhadubey1:Mhtt1XkQq18k8nqQzsqn@hub.browserstack.com:80/wd/hub',
+        desired_capabilities= desired_cap)
         driver.get("https://staging.osf.io/")
         time.sleep(3)
         driver.find_element_by_partial_link_text("Sign In").click()
