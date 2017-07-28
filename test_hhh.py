@@ -31,5 +31,5 @@ class idontknow:
         driver.find_element_by_name("submit").click()
         driver.quit()
 
-i= idontknow     
-i.test_login(idontknow,driver)
+i= idontknow()     
+i.test_login(driver)
