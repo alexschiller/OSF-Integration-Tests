@@ -12,3 +12,6 @@ def driver():
     desired_capabilities= desired_cap)
     yield driver
     driver.quit()
+
+def test_login(driver):
+  Login(driver)
