@@ -18,10 +18,9 @@ driver= webdriver.Remote(
 command_executor='http://shikhadubey1:Mhtt1XkQq18k8nqQzsqn@hub.browserstack.com:80/wd/hub',
 desired_capabilities= desired_cap)
 
-test_login(driver)
 
 class idontknow:
-    def test_login(driver):
+    def test_login(self,driver):
         
         driver.get("https://staging.osf.io/")
         time.sleep(3)
@@ -37,3 +36,6 @@ class idontknow:
 
         driver.find_element_by_name("submit").click()
         driver.quit()
+
+        
+test_login(driver)
