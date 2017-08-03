@@ -9,7 +9,7 @@ class CreateProject:
 
     def __init__(self, driver):
         time.sleep(3)
-        driver.find_element_by_css_selector("//*[@id='osfHome']/div[2]/div/div/div/div/div[1]/m-b-lg/div/span/button").click()
+        driver.find_element_by_css_selector("#osfHome > div.quickSearch > div > div > div > div > div:nth-child(1) > m-b-lg > div > span > button").click()
         time.sleep(3)
         driver.find_element_by_name("projectName").send_keys("Testselenium")
         driver.find_element_by_css_selector("//*[@id='addProjectFromHome']/div/div/div[3]/button[2]").click()
