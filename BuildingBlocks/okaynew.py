@@ -10,7 +10,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 class Login:
    
-    def test_login(self, driver):
+    def test_login(driver):
         
         driver.get("https://osf.io/")
         time.sleep(3)
@@ -26,7 +26,7 @@ class Login:
                 
         driver.find_element_by_name("submit").click()
         
-def test_CreateProject(self, driver):
+   def test_CreateProject(driver):
         time.sleep(3)
         driver.find_element_by_css_selector("#osfHome > div.quickSearch > div > div > div > div > div:nth-child(1) > m-b-lg > div > span > button").click()
         time.sleep(3)
