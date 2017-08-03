@@ -5,6 +5,9 @@ sudo: enabled
 install:
   - pip install selenium
   #- pip install -r requirements.txt
+env:
+  global:
+    - PROJECT_DIR="buildingblocks/test_hi.py"  
 # command to run tests
 script: pytest test_hi.py
 
