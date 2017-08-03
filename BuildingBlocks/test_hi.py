@@ -13,6 +13,6 @@ def driver():
     yield driver
     driver.quit()
     
-def test_login(driver):
+def test_yes(driver):
     test_login(driver)
     test_CreateProject(driver)
