@@ -4,10 +4,8 @@ sudo: enabled
 # command to install dependencies
 install:
   - pip install selenium
-  #- pip install -r requirements.txt
-env:
-  global:
-    - PROJECT_DIR="$/home/BuildingBlocks/"  
+
+before_script: cd BuildingBlocks
 # command to run tests
 script: pytest test_hi.py
 
