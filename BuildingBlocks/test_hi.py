@@ -1,5 +1,5 @@
-from okaynew import test_login
-from okaynew import test_CreateProject
+from Login import test_login
+from Login import test_CreateProject
 import pytest
 import time
 from selenium import webdriver
