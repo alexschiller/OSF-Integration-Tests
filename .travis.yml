@@ -7,7 +7,7 @@ install:
   #- pip install -r requirements.txt
 env:
   global:
-    - PROJECT_DIR="$/home/travis/build/ajski/qaproto/BuildingBlocks"  
+    - PROJECT_DIR="$/home/BuildingBlocks/"  
 # command to run tests
 script: pytest test_hi.py
 
