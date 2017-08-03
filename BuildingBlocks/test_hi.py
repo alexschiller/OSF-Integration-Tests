@@ -1,4 +1,5 @@
-from test_okaynew import Login
+from Login import Login
+from CreateProject import CreateProject
 import pytest
 import time
 from selenium import webdriver
@@ -14,5 +15,5 @@ def driver():
     driver.quit()
     
 def test_yes(driver):
-    test_login(driver)
-    test_CreateProject(driver)
+    Login(driver)
+    CreateProject(driver)
