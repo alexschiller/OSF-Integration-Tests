@@ -15,5 +15,5 @@ class CreateProject:
         time.sleep(3)
         driver.find_element_by_css_selector("#addProjectFromHome > div > div > div.modal-footer > button.btn.btn-success").click()
         time.sleep(3)
-        driver.find_element_by_css_selector("//*[@id='addProjectFromHome']/div/div/div/div[2]/a").click()
+        driver.find_element_by_css_selector("#addProjectFromHome > div > div > div > div.modal-footer > a").click()
         
