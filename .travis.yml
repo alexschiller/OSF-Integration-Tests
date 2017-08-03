@@ -4,9 +4,11 @@ sudo: enabled
 # command to install dependencies
 install:
   - pip install selenium
-  #- pip install -r requirements.txt
+
+before_script: cd BuildingBlocks
 # command to run tests
-script: pytest
+script: pytest test_hi.py
+
 
 
     
