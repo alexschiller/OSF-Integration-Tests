@@ -16,7 +16,7 @@ script: pytest
 desired_cap = {'browser': 'Chrome', 'browser_version': '60.0', 'os': 'OS X', 'os_version': 'Sierra', 'resolution': '1024x768'}
 driver = Selenium::WebDriver.for(:remote,
   :url => "http://shikhadubey1:Mhtt1XkQq18k8nqQzsqn@hub.browserstack.com:80/wd/hub",
-  :desired_capabilities => caps)
+  :desired_capabilities => desired_cap)
   
   
 
