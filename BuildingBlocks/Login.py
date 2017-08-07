@@ -15,7 +15,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 class Login:
    
-    def __init__(self, driver):
+    def test_login(self, driver):
         
         driver.get("https://osf.io/")
         time.sleep(3)
