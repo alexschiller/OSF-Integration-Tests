@@ -1,20 +1,20 @@
+addons: 
+  browserstack: 
+    access_key: Mhtt1XkQq18k8nqQzsqn
+    username: shikhadubey1
+before_script: "cd BuildingBlocks"
+desired_cap: 
+  browser: Chrome
+  browser_version: "60.0"
+  os: "OS X"
+  os_version: Sierra
+  resolution: 1024x768
 language: python
-
+script: pytest
 sudo: enabled
-# command to install dependencies
-#install:
-  #- pip install selenium
-addons:
-  browserstack:
-    username: "shikhadubey1"
-    access_key: "Mhtt1XkQq18k8nqQzsqn"
-    desired_cap = {'browser': 'Chrome', 'browser_version': '60.0', 'os': 'OS X', 'os_version': 'Sierra', 'resolution': '1024x768'}
-driver = Selenium::WebDriver.for(:remote,:url => "http://shikhadubey1:Mhtt1XkQq18k8nqQzsqn@hub.browserstack.com:80/wd/hub",:desired_capabilities => desired_cap)
+#driver = Selenium::WebDriver.for(:remote,:url => "http://shikhadubey1:Mhtt1XkQq18k8nqQzsqn@hub.browserstack.com:80/wd/hub",:desired_capabilities => desired_cap)
   
 
-before_script: cd BuildingBlocks
-# command to run tests
-script: pytest 
 
 
   
