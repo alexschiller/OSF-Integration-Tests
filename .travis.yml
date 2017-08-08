@@ -10,7 +10,7 @@ before_script: "cd BuildingBlocks"
   #os_version: Sierra
   #resolution: 1024x768'''
   # Input capabilities
-caps = Selenium::WebDriver::Remote::Capabilities.new
+caps: Selenium::WebDriver::Remote::Capabilities.new
 caps['browserstack.local'] = 'true'
 caps['browserstack.localIdentifier'] = ENV['BROWSERSTACK_LOCAL_IDENTIFIER']
 # Add other capabilities like browser name, version and os name, version
