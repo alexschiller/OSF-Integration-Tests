@@ -2,8 +2,8 @@ language: python
 
 sudo: enabled
 # command to install dependencies
-install:
-  - pip install selenium
+#install:
+  #- pip install selenium
 addons:
   browserstack:
     username: "shikhadubey1"
