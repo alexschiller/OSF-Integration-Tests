@@ -12,7 +12,7 @@ desired_cap:
 language: python
 script: pytest
 sudo: enabled
-#driver = Selenium::WebDriver.for(:remote,:url => "http://shikhadubey1:Mhtt1XkQq18k8nqQzsqn@hub.browserstack.com:80/wd/hub",:desired_capabilities => desired_cap)
+driver = Selenium::WebDriver.for(:remote,:url => "http://shikhadubey1:Mhtt1XkQq18k8nqQzsqn@hub.browserstack.com:80/wd/hub",:desired_capabilities => desired_cap)
   
 
 
